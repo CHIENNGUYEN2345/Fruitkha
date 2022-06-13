@@ -16,6 +16,8 @@ class CreateTblProduct extends Migration
         Schema::create('tbl_product', function (Blueprint $table) {
             $table->increments('product_id');
             $table->integer('category_id');
+            $table->integer('product_name');
+            $table->integer('product_quantity');
             $table->integer('brand_id');
             $table->text('product_desc');
             $table->text('product_content');
